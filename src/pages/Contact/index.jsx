@@ -1,6 +1,8 @@
 import { Container, Main } from "./style";
+import Swal from 'sweetalert2'
 
-import { useEffect, useState } from 'react'; 
+import { useEffect, useState } from 'react';
+import { api } from "../../services/api";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -9,28 +11,57 @@ import { Menu } from "../../components/Menu";
 
 export function Contact(){
    const [name, setName] = useState('');
+   const [text, setText] = useState('');
    const [email, setEmail] = useState('');
-   const [message, setMessage] = useState('');
    const [menuOpen, setMenuOpen] = useState(false);
    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
- function handleSend(){
-      if (!name || !email || !message){
-         return alert("Preencha todos os campos")
-      }
+   const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
 
-      if (!emailPattern.test(email)) {
-         return alert("Digite um email válido")
-      }
-
-      console.log(`
-         Nome: ${name},
-         Email: ${email},
-         Mensagem: ${message}.
-         `)
-
-      alert("Mensagem enviada")
-   };
+  async function handleSend() {
+    if (!name || !email || !text) {
+      return Toast.fire({
+        icon: "warning",
+        title: "Fill in all fields!"
+      });
+    }
+  
+    if (!emailPattern.test(email)) {
+      return Toast.fire({
+        icon: "warning",
+        title: "Enter a valid email address!"
+      });
+    }
+  
+    try {
+      await api.post("/send", { name, email, text });
+  
+      setName('');
+      setText('');
+      setEmail('');
+  
+      Toast.fire({
+        icon: "success",
+        title: "Message sent successfully!"
+      });
+    } catch (error) {
+      console.log(error);
+      Toast.fire({
+        icon: "error",
+        title: "Error sending message!"
+      });
+    }
+  };
 
 
    useEffect(() => {
@@ -59,8 +90,9 @@ export function Contact(){
        <div className="input-wrapper name">
          <label htmlFor="name">Name</label>
          <input 
-          type="text" 
           id="name" 
+          type="text" 
+          value={name}
           placeholder="Your Name"
           onChange={e => setName(e.target.value)}
          />
@@ -69,19 +101,21 @@ export function Contact(){
        <div className="input-wrapper email">
          <label htmlFor="email">Email</label>
          <input 
-          type="text" 
           id="email" 
+          type="text"
+          value={email} 
           placeholder="email@example.com"
           onChange={e => setEmail(e.target.value)}
          />
        </div>
 
-       <div className="input-wrapper message">
-         <label htmlFor="message">Message</label>
+       <div className="input-wrapper text">
+         <label htmlFor="text">Message</label>
          <textarea 
-          id="message" 
+          id="text" 
+          value={text}
           placeholder="Hello, my name is . . ."
-          onChange={e => setMessage(e.target.value)}
+          onChange={e => setText(e.target.value)}
          />
        </div>
       </Main>

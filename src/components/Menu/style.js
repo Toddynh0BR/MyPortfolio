@@ -58,9 +58,12 @@ h4 {
  margin-bottom: -5rem;
 
  svg {
+
  font-size: 2.4rem;
  margin-right: 1rem;
  cursor: pointer;
+
+
  }
 }
 
@@ -72,4 +75,13 @@ span {
  font-size: 2.4rem;
 }
 
+
+@media (max-width: 750px){
+ gap: 10rem;
+ flex-direction: column;
+
+ h2 {
+ margin-left: 0rem;
+ }
+}
 `

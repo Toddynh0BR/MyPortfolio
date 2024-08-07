@@ -11,21 +11,21 @@ export function Menu({menu, onclick}){
             <IoCloseOutline  className="X" onClick={onclick}/>
 
             <div className="Main">
-                <h4>MENU</h4>
+                <h4 translate="no">MENU</h4>
                 <Link to="/">
-                <h2>HOME</h2>
+                <h2 translate="no">HOME</h2>
                 </Link>
 
                 <Link to="/projects">
-                <h2>PROJECTS</h2>
+                <h2 translate="no">PROJECTS</h2>
                 </Link>
 
                 <Link to="/about">
-                <h2>ABOUT</h2>
+                <h2 translate="no">ABOUT</h2>
                 </Link>
 
                 <Link to="/contact">
-                <h2>CONTACT</h2>
+                <h2 translate="no">CONTACT</h2>
                 </Link>
             </div>
 

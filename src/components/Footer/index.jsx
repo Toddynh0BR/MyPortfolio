@@ -8,15 +8,15 @@ export function Footer({titleone, titletwo, titlethree, linkone, linktwo, linkth
     <Container>
         <div className="pages">
          <Link to={linkone}>
-         <span>{titleone}</span>
+         <span translate="no">{titleone}</span>
          </Link>
 
          <Link to={linktwo}>
-         <span>{titletwo}</span>
+         <span translate="no">{titletwo}</span>
          </Link>
 
          <Link to={linkthree}>
-         <span>{titlethree}</span>
+         <span translate="no">{titlethree}</span>
          </Link>
         </div>
 

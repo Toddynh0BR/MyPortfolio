@@ -43,7 +43,7 @@ h2 {
 .email {
  grid-area: input2;
 }
-.message {
+.text {
  grid-area: input3;
 }
 
