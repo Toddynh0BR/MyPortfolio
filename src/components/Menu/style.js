@@ -5,7 +5,7 @@ height: 100vh;
 width: 100%;
 transition: .5s ease-in-out;
 
-top: -100%;
+top: -150%;
 &[data-menu-open="true"]{
 top: 0;
 }
@@ -82,6 +82,7 @@ span {
 
  h2 {
  margin-left: 0rem;
+ font-size: 6rem;
  }
 }
 `
