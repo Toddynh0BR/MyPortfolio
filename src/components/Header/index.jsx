@@ -9,7 +9,7 @@ export function Header({title, subtitle, onclick}){
         <img src={Simbol} alt="Simbolo da rebelião" />
         <TbMenuDeep onClick={onclick}/>
         
-        <h1>{title}</h1>
+        <h1 translate="no">{title}</h1>
         <h2 translate="no">{subtitle}</h2>
     </Container>
  )
