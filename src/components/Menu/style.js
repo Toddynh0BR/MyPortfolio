@@ -39,10 +39,29 @@ h2 {
  font-weight: 700;
  font-size: 6.4rem;
 
+ width: fit-content;
  margin-left: 4rem;
  margin-bottom: 1rem;
 
+ position: relative;
+
  cursor: pointer;
+}
+
+h2::after {
+content: " ";
+width: 0%;
+height: .5rem;
+position: absolute;
+
+left: 0;
+bottom: 0;
+transition: .5s ease-in-out;
+background-color: #000000;
+}
+
+h2:hover::after {
+  width: 100%;
 }
 
 h4 { 
@@ -58,22 +77,31 @@ h4 {
  margin-bottom: -5rem;
 
  svg {
-
- font-size: 2.4rem;
+ box-sizing: content-box;
  margin-right: 1rem;
+ padding: 1rem;
+
+ transition: .4s ease-in-out;
+ border-radius: 50%;
+ font-size: 2.4rem;
  cursor: pointer;
-
-
  }
+
+ svg:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+ }
+
 }
 
 span {
  display: block;
-  margin-bottom: 1rem;
+ margin-bottom: 1rem;
 
  font-weight: 600;
  font-size: 2.4rem;
 }
+
 
 
 @media (max-width: 750px){

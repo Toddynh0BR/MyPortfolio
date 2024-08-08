@@ -8,8 +8,9 @@ import { Button } from "../../components/Button";
 import { Menu } from "../../components/Menu";
 import { Card } from "../../components/Card";
 
-import FoodExplorer from "../../assets/FoodExplorer.png";
-import GitFavorites from "../../assets/GitFavorites.png";
+import FoodExplorer from "../../assets/FoodExplorer.svg";
+import FocusTimer from "../../assets/FocusTimer.svg";
+import TodoApp from "../../assets/TodoApp.svg";
 
 import { 
          DiHtml5, DiCss3, DiJavascript, DiReact, DiNodejsSmall, DiNpm, 
@@ -43,8 +44,7 @@ export function Home(){
         <Main>
             <h2>About me</h2>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, corporis iusto exercitationem, animi totam ipsum est ab nemo assumenda repellat itaque. Odit perferendis asperiores itaque? Beatae reiciendis non fugit temporibus.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis fugit mollitia eos repudiandae eveniet quasi animi odit quidem voluptas quis dolorem sapiente deleniti sequi, autem vitae dolore! Distinctio, voluptatem aspernatur?
+            I am a junior full stack developer, dedicated to continuous learning and self-improvement. With a solid foundation in web development, my focus is on constantly expanding my knowledge and skills in both Front-End and Back-End areas. I am always looking for new opportunities to learn and apply emerging technologies, and I strive to take on complex challenges that allow me to grow professionally.
             </p>
             
             <h2>My Skills</h2>
@@ -109,21 +109,21 @@ export function Home(){
          title="FoodExplorer"
          techs="ReactJs, NodeJs, Git, NPM"
          image={FoodExplorer}
-         link="#"
+         link="https://toddyfoodexplorer.netlify.app/"
         />
 
         <Card 
-         title="GitFavorites"
-         techs="HTML, CSS, JS, API"
-         image={GitFavorites}
-         link="#"
+         title="Todo App"
+         techs="HTML, CSS, JS"
+         image={TodoApp}
+         link="https://toddynh0br.github.io/Todo-App/"
         />
 
         <Card 
-         title="RocketMovies"
-         techs="ReactJs, NodeJs, Git, NPM"
-         image={FoodExplorer}
-         link="#"
+         title="FocusTimer"
+         techs="HTML, CSS, JS"
+         image={FocusTimer}
+         link="https://toddynh0br.github.io/Focus-Timer/"
         />
 
         </Projects>

@@ -8,8 +8,12 @@ import { Button } from "../../components/Button";
 import { Menu } from "../../components/Menu";
 import { Card } from "../../components/Card";
 
-import FoodExplorer from "../../assets/FoodExplorer.png";
-import GitFavorites from "../../assets/GitFavorites.png";
+import InteractiveCardDetail from "../../assets/InteractiveCardDetail.svg";
+import CalculatorApp from "../../assets/Calculator App.svg";
+import AgeCalculator from "../../assets/AgeCalculator.svg";
+import FoodExplorer from "../../assets/FoodExplorer.svg";
+import FocusTimer from "../../assets/FocusTimer.svg";
+import TodoApp from "../../assets/TodoApp.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export function Projects(){
@@ -39,42 +43,42 @@ export function Projects(){
          title="FoodExplorer"
          techs="ReactJs, NodeJs, Git, NPM"
          image={FoodExplorer}
-         link="#"
+         link="https://toddyfoodexplorer.netlify.app/"
         />
 
         <Card 
-         title="GitFavorites"
-         techs="HTML, CSS, JS, API"
-         image={GitFavorites}
-         link="#"
+         title="Todo App"
+         techs="HTML, CSS, JS"
+         image={TodoApp}
+         link="https://toddynh0br.github.io/Todo-App/"
         />
 
         <Card 
-         title="RocketMovies"
-         techs="ReactJs, NodeJs, Git, NPM"
-         image={FoodExplorer}
-         link="#"
+         title="FocusTimer"
+         techs="HTML, CSS, JS"
+         image={FocusTimer}
+         link="https://toddynh0br.github.io/Focus-Timer/"
         />
         
         <Card 
-         title="FoodExplorer"
-         techs="ReactJs, NodeJs, Git, NPM"
-         image={FoodExplorer}
-         link="#"
+         title="CalculatorApp"
+         techs="HTML, CSS, JS"
+         image={CalculatorApp}
+         link="https://toddynh0br.github.io/Calculator-App/"
         />
 
         <Card 
-         title="GitFavorites"
-         techs="HTML, CSS, JS, API"
-         image={GitFavorites}
-         link="#"
+         title="InteractiveCardDetail"
+         techs="HTML, CSS, JS"
+         image={InteractiveCardDetail}
+         link="https://toddynh0br.github.io/Interactive-Card-Details/"
         />
 
         <Card 
-         title="RocketMovies"
-         techs="ReactJs, NodeJs, Git, NPM"
-         image={FoodExplorer}
-         link="#"
+         title="AgeCalculator"
+         techs="HTML, CSS, JS"
+         image={AgeCalculator}
+         link="https://toddynh0br.github.io/Age-Calculator/"
         />
       </Myprojects>
 

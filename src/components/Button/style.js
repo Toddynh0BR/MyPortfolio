@@ -24,6 +24,9 @@ svg {
  filter: brightness(90%);
  cursor: pointer;
 }
+&:disabled{
+ filter: brightness(90%);
+}
 
 @media (max-width: 750px){
  width: 29.8rem;

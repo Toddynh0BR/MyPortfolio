@@ -13,6 +13,7 @@ export function Contact(){
    const [name, setName] = useState('');
    const [text, setText] = useState('');
    const [email, setEmail] = useState('');
+   const [Loading, setLoading] = useState(false);
    const [menuOpen, setMenuOpen] = useState(false);
    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -43,6 +44,7 @@ export function Contact(){
       });
     }
   
+    setLoading(true)
     try {
       await api.post("/send", { name, email, text });
   
@@ -54,12 +56,14 @@ export function Contact(){
         icon: "success",
         title: "Message sent successfully!"
       });
+      setLoading(false)
     } catch (error) {
       console.log(error);
       Toast.fire({
         icon: "error",
         title: "Error sending message!"
       });
+      setLoading(false)
     }
   };
 
@@ -122,6 +126,7 @@ export function Contact(){
           
        <Button
          title="Send message"
+         loading={Loading}
          onClick={handleSend}
        />
 

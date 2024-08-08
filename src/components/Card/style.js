@@ -4,13 +4,7 @@ export const Container = styled.div`
 height: 46rem;
 width: 36rem;
 position: relative;
-
--webkit-box-shadow: inset 0px 0px 29px 28px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 0px 29px 28px rgba(0,0,0,0.75);
-box-shadow: inset 0px 0px 29px 28px rgba(0,0,0,0.75);
-
- cursor: pointer;
-
+transition: .3s ease-in-out;
 
 .title {
  position: absolute;
@@ -37,9 +31,12 @@ img {
  position: absolute;
  z-index: -1;
  top: 0;
-
 }
 
+&:hover{
+ transform: scale(105%);
+ cursor: pointer;
+}
 @media (max-width: 750px){
  width: 29.8rem;
  height: 38.2rem;

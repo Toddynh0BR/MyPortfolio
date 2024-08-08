@@ -30,6 +30,26 @@ span {
  span:hover {
  filter: brightness(60%);
  }
+
+ span {
+  position: relative;
+ }
+ 
+ span::after {
+ content: " ";
+ width: 0%;
+ height: .1rem;
+ background-color: #FFFFFF;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+
+ transition: .3s ease-in-out;
+ }
+
+ span:hover::after  {
+ width: 100%;
+ }
 }
 
 .others {
