@@ -9,7 +9,7 @@ import { Menu } from "../../components/Menu";
 import { Card } from "../../components/Card";
 
 import FoodExplorer from "../../assets/FoodExplorer.svg";
-import FocusTimer from "../../assets/FocusTimer.svg";
+import RocketMovies from "../../assets/RocketMovies.svg";
 import TodoApp from "../../assets/TodoApp.svg";
 
 import { 
@@ -120,11 +120,12 @@ export function Home(){
         />
 
         <Card 
-         title="FocusTimer"
-         techs="HTML, CSS, JS"
-         image={FocusTimer}
-         link="https://toddynh0br.github.io/Focus-Timer/"
+         title="RocketMovies"
+         techs="ReactJs, NodeJs, Git, NPM"
+         image={RocketMovies}
+         link="https://rocketmovies-toddy.netlify.app/"
         />
+
 
         </Projects>
 
