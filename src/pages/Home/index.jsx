@@ -10,7 +10,7 @@ import { Card } from "../../components/Card";
 
 import FoodExplorer from "../../assets/FoodExplorer.svg";
 import RocketMovies from "../../assets/RocketMovies.svg";
-import TodoApp from "../../assets/TodoApp.svg";
+import RocketNotes from "../../assets/RocketNotes.svg";
 
 import { 
          DiHtml5, DiCss3, DiJavascript, DiReact, DiNodejsSmall, DiNpm, 
@@ -113,10 +113,10 @@ export function Home(){
         />
 
         <Card 
-         title="Todo App"
-         techs="HTML, CSS, JS"
-         image={TodoApp}
-         link="https://toddynh0br.github.io/Todo-App/"
+         title="RocketNotes"
+         techs="ReactJs, NodeJs, Git, NPM"
+         image={RocketNotes}
+         link="https://rocketnotes-toddy.netlify.app/"
         />
 
         <Card 

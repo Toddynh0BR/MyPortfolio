@@ -13,8 +13,10 @@ import CalculatorApp from "../../assets/Calculator App.svg";
 import AgeCalculator from "../../assets/AgeCalculator.svg";
 import FoodExplorer from "../../assets/FoodExplorer.svg";
 import RocketMovies from "../../assets/RocketMovies.svg";
+import RocketNotes from "../../assets/RocketNotes.svg";
 import FocusTimer from "../../assets/FocusTimer.svg";
 import TodoApp from "../../assets/TodoApp.svg";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export function Projects(){
@@ -52,6 +54,13 @@ export function Projects(){
          techs="ReactJs, NodeJs, Git, NPM"
          image={RocketMovies}
          link="https://rocketmovies-toddy.netlify.app/"
+        />
+
+        <Card 
+         title="RocketNotes"
+         techs="ReactJs, NodeJs, Git, NPM"
+         image={RocketNotes}
+         link="https://rocketnotes-toddy.netlify.app/"
         />
 
         <Card 
