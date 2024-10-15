@@ -42,7 +42,7 @@ p {
 
 .Skills {
  display: grid;
- row-gap: 2rem;
+ row-gap: 0rem;
  grid-template-columns: repeat(5, 1fr);
 }
 
@@ -50,6 +50,8 @@ p {
  gap: .5rem;
  display: flex;
  align-items: center;
+ white-space: nowrap;
+ padding: .5rem;
 
  svg {
  font-size: 2rem;

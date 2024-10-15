@@ -15,8 +15,9 @@ import RocketNotes from "../../assets/RocketNotes.svg";
 import { 
          DiHtml5, DiCss3, DiJavascript, DiReact, DiNodejsSmall, DiNpm, 
          DiGithubBadge, DiDatabase,DiVisualstudio, DiJava, DiMongodb,
-         DiResponsive, DiPython, DiPhp 
+         DiPython, DiPhp 
        } from "react-icons/di";
+import { BiLogoTypescript } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -66,8 +67,18 @@ export function Home(){
                 </div>
 
                 <div className="Skill">
+                    <BiLogoTypescript />
+                    <p translate="no">TypeScript</p>
+                </div>
+
+                <div className="Skill">
                     <DiReact />
                     <p translate="no">ReactJS</p>
+                </div>
+
+                <div className="Skill">
+                    <DiReact />
+                    <p translate="no">React Native</p>
                 </div>
 
                 <div className="Skill">
@@ -109,21 +120,21 @@ export function Home(){
          title="FoodExplorer"
          techs="ReactJs, NodeJs, Git, NPM"
          image={FoodExplorer}
-         link="https://toddyfoodexplorer.netlify.app/"
+         link="https://github.com/Toddynh0BR/Food-Explorer-FrontEnd"
         />
 
         <Card 
          title="RocketNotes"
          techs="ReactJs, NodeJs, Git, NPM"
          image={RocketNotes}
-         link="https://rocketnotes-toddy.netlify.app/"
+         link="https://github.com/Toddynh0BR/Rocket-Notes-Front"
         />
 
         <Card 
          title="RocketMovies"
          techs="ReactJs, NodeJs, Git, NPM"
          image={RocketMovies}
-         link="https://rocketmovies-toddy.netlify.app/"
+         link="https://github.com/Toddynh0BR/Rocket-Movies-Front"
         />
 
 

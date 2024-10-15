@@ -16,6 +16,8 @@ import RocketMovies from "../../assets/RocketMovies.svg";
 import RocketNotes from "../../assets/RocketNotes.svg";
 import FocusTimer from "../../assets/FocusTimer.svg";
 import TodoApp from "../../assets/TodoApp.svg";
+import MHMobal from "../../assets/mhMobal.svg";
+import MH from "../../assets/mh.svg";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -46,57 +48,73 @@ export function Projects(){
          title="FoodExplorer"
          techs="ReactJs, NodeJs, Git, NPM"
          image={FoodExplorer}
-         link="https://toddyfoodexplorer.netlify.app/"
+         link="https://github.com/Toddynh0BR/Food-Explorer-FrontEnd"
         />
 
+        
         <Card 
-         title="RocketMovies"
+         title="MHImports"
          techs="ReactJs, NodeJs, Git, NPM"
-         image={RocketMovies}
-         link="https://rocketmovies-toddy.netlify.app/"
+         image={MH}
+         link="https://github.com/Toddynh0BR/MH-Imports-Front"
         />
 
         <Card 
          title="RocketNotes"
          techs="ReactJs, NodeJs, Git, NPM"
          image={RocketNotes}
-         link="https://rocketnotes-toddy.netlify.app/"
+         link="https://github.com/Toddynh0BR/Rocket-Notes-Front"
+        />
+
+        <Card 
+         title="RocketMovies"
+         techs="ReactJs, NodeJs, Git, NPM"
+         image={RocketMovies}
+         link="https://github.com/Toddynh0BR/Rocket-Movies-Front"
         />
 
         <Card 
          title="Todo App"
          techs="HTML, CSS, JS"
          image={TodoApp}
-         link="https://toddynh0br.github.io/Todo-App/"
+         link="https://github.com/Toddynh0BR/Todo-App"
         />
 
         <Card 
          title="FocusTimer"
          techs="HTML, CSS, JS"
          image={FocusTimer}
-         link="https://toddynh0br.github.io/Focus-Timer/"
+         link="https://github.com/Toddynh0BR/Focus-Timer"
         />
         
         <Card 
          title="CalculatorApp"
          techs="HTML, CSS, JS"
          image={CalculatorApp}
-         link="https://toddynh0br.github.io/Calculator-App/"
+         link="https://github.com/Toddynh0BR/Calculator-App"
         />
 
         <Card 
          title="InteractiveCardDetail"
          techs="HTML, CSS, JS"
          image={InteractiveCardDetail}
-         link="https://toddynh0br.github.io/Interactive-Card-Details/"
+         link="https://github.com/Toddynh0BR/Interactive-Card-Details"
         />
 
         <Card 
          title="AgeCalculator"
          techs="HTML, CSS, JS"
          image={AgeCalculator}
-         link="https://toddynh0br.github.io/Age-Calculator/"
+         link="https://github.com/Toddynh0BR/Age-Calculator"
         />
+
+        <Card 
+         title="MHImports Mobile"
+         techs="React Native, NodeJs, TS, CSS, Git, Expo"
+         image={MHMobal}
+         link="https://github.com/Toddynh0BR/MH-Imports-Mobal"
+        />
+
       </Myprojects>
 
 
